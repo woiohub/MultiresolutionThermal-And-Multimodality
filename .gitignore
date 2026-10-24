@@ -27,3 +27,5 @@ __pycache__/
 build/
 managed_components/
 sdkconfig.old
+
+.workbuddy/
