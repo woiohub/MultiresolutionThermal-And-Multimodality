@@ -1,0 +1,29 @@
+# ===== MultiresolutionThermal 项目根 .gitignore =====
+# 各子项目（esp32s3 / thermalcamera/senxorESP32S3 / py_viewer）有各自的
+# .gitignore，此处放置全仓库通用的规则。
+
+# ===== IDE / 编辑器 =====
+.vscode/
+.idea/
+*.swp
+*~
+
+# ===== 系统文件 =====
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ===== 临时 / 备份文件 =====
+*.tmp
+*.bak
+*.log
+*._*
+
+# ===== Python（全仓库兜底）=====
+__pycache__/
+*.py[cod]
+
+# ===== ESP-IDF（兜底，防止构建产物在意外位置被跟踪）=====
+build/
+managed_components/
+sdkconfig.old
